@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="../formulario/style.css">
+</head>
+<body>
+
+        <!--Barra Menu-->
+    <nav id="menuH">
+        <div class="navbar">
+            <a href="../index.html">Home
+            </a>
+
+            <a href="../Empresa/index.html">Empresa
+            </a> 
+
+            <div class="dropdown">
+              <button class="dropbtn">Devs
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../curriculo.html">Guilherme</a>
+                <a href="#">Maria Eduarda</a>
+            </div>
+            </div>
+
+            <a href="../jogos/index2.html">jogos
+            </a> 
+
+            <a href="../News/index.html">News
+            </a> 
+
+            <a href="../dupla/formulario/index.html">contato
+            </a> 
+
+            <a href="http://sga.fmpsc.edu.br/portal">Entrar
+            </a>
+
+          </div>
+    </nav>
+    <!--Barra Menu-->
+
+    <!--Formulario Contato-->
+    <div class="formularioContato">
+        
+        <form action="aquiIraOEmail.php" method="post" enctype="multipart/form-data">
+            <label>
+                <span><i class="icon icon-user-1"></i> Nome</span>
+                <input type="text" name="nome" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-email"></i> E-mail</span>
+                <input type="text" name="email" class="fade_8S">
+            </label>
+            <label>
+                <span><i class="icon icon-flag"></i> Assunto</span>
+                <input type="text" name="assunto" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-comment"></i> Mensagem</span>
+                 <textarea name="mensagem" rows="3" required=""></textarea> 
+            </label>
+           
+            <input type="hidden" name="acao" value="enviar" />
+            <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+        
+        </form>
+    </div><!--Formulario Contato-->
+</body>
+<footer>
+    <p>Sede Florianopolis</p>
+    <p>Av. Ivo Silveira, 777 - Capoeiras</p>
+    <p>Tel.: (48)99615-7423</p>
+  </footer>
+</html>
